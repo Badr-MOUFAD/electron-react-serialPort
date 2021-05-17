@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
     "watch": "webpack --config webpack.common.js --watch",
-    "install": "electron-rebuild",
+    "rebuild": "electron-rebuild",
     "build": "electron-packager . test-deploy"
   },
   "keywords": [],
