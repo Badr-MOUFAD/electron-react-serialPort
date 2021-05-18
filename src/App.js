@@ -79,6 +79,7 @@ export default function App() {
         >
           Increse Purple
       </Button>
+
       <ChartComponent id="123abc" height="100" chartProps={chartProps}/>
     </div>
   )
