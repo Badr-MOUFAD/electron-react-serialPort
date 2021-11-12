@@ -29,3 +29,11 @@ npm run watch
 
 
 To view the app, run `npm start`.
+
+
+## Note
+
+An article about this template app (motivation, project structure, getting started, ...) will be released soon, stay tuned ...
+
+
+> in progress ...
