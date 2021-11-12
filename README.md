@@ -12,7 +12,9 @@ When using this template, you have access not only to lower system API such as s
 
 1. First, start with cloning this repository by running
 
-```git clone https://github.com/Badr-MOUFAD/electron-react-serialPort.git```
+```
+git clone https://github.com/Badr-MOUFAD/electron-react-serialPort.git
+```
 
 2. Then `cd` to template directory and run the following commands to install dependencies and rebuild them to made them compatible with ``electron``
 
