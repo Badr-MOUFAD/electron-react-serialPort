@@ -85,11 +85,12 @@ contextBridge.exposeInMainWorld(
     }
 )
 
+
 // building upload file API
 const dialog = remote.dialog;
 
 contextBridge.exposeInMainWorld(
-    'Upload', {
+    'UploadAPI', {
         openDialog: (callback) => {
             dialog.showOpenDialog({ 
                 title: 'Séléctionner un fichier csv', 
@@ -98,8 +99,8 @@ contextBridge.exposeInMainWorld(
                 // Restricting the user to only csv files. 
                 filters: [ 
                     { 
-                        name: 'Fichier csv', 
-                        extensions: ['csv'] 
+                        name: 'Fichier csv | pdf', 
+                        extensions: ['csv', 'pdf'] 
                     },], 
                 // Specifying the File Selector Property 
                 properties: ['openFile'] 

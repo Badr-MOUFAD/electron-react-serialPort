@@ -15,8 +15,9 @@ function createWindow() {
     height: 800,
     backgroundColor: "white",
     webPreferences: {
-      nodeIntegration: true,
       //worldSafeExecuteJavaScript: true,
+      nodeIntegration: true,
+      enableRemoteModule: true,
       contextIsolation: true,
       preload: path.join(__dirname, 'preload.js'),
     }

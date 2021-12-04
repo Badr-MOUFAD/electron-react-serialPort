@@ -6,6 +6,7 @@ import { ChartComponent } from './components/ChartComponent';
 
 export default function App() {
   const [count, setCount] = useState(0);
+  const [selectedFile, setSelelectedFile] = useState("no selected file");
 
   const chartProps = {
         type: 'line',
@@ -51,9 +52,12 @@ export default function App() {
         <Badge className="ml-5" variant="secondary">{(false) ? "connected" : "disconnected"}</Badge>
       </h1>
 
-      <div className="my-5">
-        <Button onClick={() => setCount(count + 1)}>Increase purple</Button>
+      <div className="mt-5">
+        <Button className="mr-2" onClick={() => setCount(count + 1)}>Increase purple</Button>
+        <Button onClick={() => window.UploadAPI.openDialog((f)=>setSelelectedFile(f))}>Open file dialog</Button>
       </div>
+
+      <div className="my-1 font-italic text-muted">{selectedFile}</div>
 
       <ChartComponent id="123abc" height="100" chartProps={chartProps}/>
     </div>
